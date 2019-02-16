@@ -1,2 +1,10 @@
-<input type='text' placeholder="search..." (blur)='search()'>
-<i class="fas fa-user"></i>
+
+<span class="header" (click)="getName()" >
+  <i class="fas fa-user"></i>
+  <a class = "username">{{userName}}</a>
+  <input class="inputbox" type='text' placeholder="search..." (blur)='search()'>
+  <span class="position_right">
+    <a class = "timeline" (click)="getTimeline()">Timeline</a>
+    <a class = "logout"(click)="logOut()">Logout</a>
+  </span>
+</span>

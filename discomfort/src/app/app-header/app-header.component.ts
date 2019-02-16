@@ -9,10 +9,20 @@ export class AppHeaderComponent implements OnInit {
 
   constructor() { }
 
+  userName = 'Name';
+
   ngOnInit() {
   }
 
   search() {
-    //Get endpoint
+     // Get endpoint
+  }
+
+  getName() {
+    this.userName = 'PLACEHOLDER';
+  }
+  logOut() {
+    // Logs the user out of the
   }
 }
+
