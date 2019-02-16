@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppPostComponent } from './app-post/app-post.component';
+import { AppWelcomeComponent } from './app-welcome/app-welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppHeaderComponent,
-    AppPostComponent
+    AppPostComponent,
+    AppWelcomeComponent
   ],
   imports: [
     BrowserModule
