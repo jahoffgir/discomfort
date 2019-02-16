@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService} from "../login.service";
+import {Log} from "@angular/core/testing/src/logger";
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppHeaderComponent implements OnInit {
 
-  constructor() { }
-
-  userName = 'Name';
+  constructor(private logInService: LoginService) {}
+  userName = this.logInService.getUserName();
 
   ngOnInit() {
   }
@@ -18,9 +19,7 @@ export class AppHeaderComponent implements OnInit {
      // Get endpoint
   }
 
-  getName() {
-    this.userName = 'PLACEHOLDER';
-  }
+
   logOut() {
     // Logs the user out of the
   }

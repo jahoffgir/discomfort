@@ -1,1 +1,2 @@
-<app-main></app-main>
+<app-main *ngIf="getUserLogin()"></app-main>
+<app-welcome *ngIf="!getUserLogin()"></app-welcome>
