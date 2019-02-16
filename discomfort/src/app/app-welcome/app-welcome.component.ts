@@ -1,15 +1,34 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService} from "../login.service";
+import { Globals} from "../globals";
 
 @Component({
-  selector: 'app-app-welcome',
+  selector: 'app-welcome',
   templateUrl: './app-welcome.component.html',
   styleUrls: ['./app-welcome.component.css']
 })
 export class AppWelcomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public login: LoginService) {
+  }
 
   ngOnInit() {
   }
 
+
+  logIn(e: Event) {
+    // TODO make the ENDPOINT connection to make sure that the user name exists
+    if (true) {
+      this.login.setLoggedInUser(true)
+      this.login.setUserName(e.target.value)
+    }
+  }
+
+  create(e: Event) {
+    // TODO make ENDPOINT connection to make sure that the user name does not exist
+    if (true) {
+      this.login.setLoggedInUser(true)
+      this.login.setUserName(e.target.value)
+    }
+  }
 }
