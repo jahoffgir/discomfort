@@ -1,31 +1,12 @@
 header {
   position: absolute;
 }
+
 i {
   margin: 2% 0.5% 0 0%;
 
 }
+
 .timeline, .logout{
   margin-left: 2%;
 }
-
-/*.inputbox {*/
-  /*align: middle;*/
-/*}*/
-
-/*.inputbox {*/
-  /*margin: auto;*/
-  /*display: block;*/
-/*}*/
-
-/*.header {*/
-  /*margin: 2% 5% 0 5%;*/
-/*}*/
-.position_right {
-}
-/*.timeline, .logout {*/
-  /*!*margin: 2%;*!*/
-/*}*/
-/*.username {*/
-  /*margin: 0 1% 0 1%;*/
-/*}*/
