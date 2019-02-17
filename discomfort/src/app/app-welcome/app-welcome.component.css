@@ -1,0 +1,12 @@
+.logIn {
+  display: table;
+  margin: 15% auto;
+}
+
+.logInStyle, p {
+  font-size: 175%;
+}
+
+input {
+  height: 20px;
+}

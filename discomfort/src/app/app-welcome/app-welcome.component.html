@@ -1,11 +1,16 @@
-<p>
-  Welcome to Discomfort!
-</p>
-<a>
-  Login:
-  <input class="inputbox" type='text' placeholder="search..." (blur)='logIn($event)'>
-</a>
-<a>
-  Create account:
-  <input class="inputbox" type='text' placeholder="search..." (blur)='create($event)'>
-</a>
+<div class="logIn">
+  <p>
+    Welcome to Discomfort!
+  </p>
+  <a class="logInStyle" [hidden]="reveal">
+    Login:
+    <input class="inputbox" type='text' placeholder="search..."  (blur)='logIn($event)'>
+  </a>
+  <a>
+  <br>
+    <div (click)='showCreateAccount()'>
+      Don't have an account? Click me!
+    </div>
+    <input type='text' placeholder="search..." [hidden]="!reveal" (blur)='create($event)'>
+  </a>
+</div>
