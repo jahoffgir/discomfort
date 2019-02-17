@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService} from "../login.service";
-import { Globals} from "../globals";
+
 
 @Component({
   selector: 'app-welcome',
@@ -12,11 +12,12 @@ export class AppWelcomeComponent implements OnInit {
   constructor(public login: LoginService) {
   }
 
+  reveal = false;
+
   ngOnInit() {
   }
 
-
-  logIn(e: Event) {
+  logIn(e) {
     // TODO make the ENDPOINT connection to make sure that the user name exists
     if (true) {
       this.login.setLoggedInUser(true)
@@ -24,7 +25,11 @@ export class AppWelcomeComponent implements OnInit {
     }
   }
 
-  create(e: Event) {
+  showCreateAccount() {
+    this.reveal = true;
+  }
+
+  create(e) {
     // TODO make ENDPOINT connection to make sure that the user name does not exist
     if (true) {
       this.login.setLoggedInUser(true)
