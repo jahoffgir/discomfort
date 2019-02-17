@@ -1,12 +1,42 @@
-header {
-  position: absolute;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* Add a black background color to the top navigation */
+.topnav {
+  padding: 0 5%;
+  background-color: #333;
+  color:white;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  height:50px;
 }
 
-i {
-  margin: 2% 0.5% 0 0%;
-
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
 }
 
-.timeline, .logout{
-  margin-left: 2%;
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+float: right;
+}
+.topnav-right p {
+  padding: 0 10px;
+  display:inline;
+  color:white;
+}
+.topnav-right p, .topnav i, .topnav p {
+  line-height: 50px;
+}
+
+.inputBox{
+  width:40%;
+  padding: 15px 0;
+}
+.timeline{
+  margin: 0 25px;
+  display: inline;
 }

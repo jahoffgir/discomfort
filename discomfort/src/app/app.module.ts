@@ -8,6 +8,7 @@ import { AppWelcomeComponent } from './app-welcome/app-welcome.component';
 import { MainComponent } from './main/main.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ChallengeComponent } from './challenge/challenge.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ChallengeComponent } from './challenge/challenge.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

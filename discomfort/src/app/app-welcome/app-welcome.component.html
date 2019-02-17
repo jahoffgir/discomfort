@@ -1,16 +1,17 @@
 <div class="logIn">
-  <p>
-    Welcome to Discomfort!
-  </p>
-  <a class="logInStyle" [hidden]="reveal">
-    Login:
-    <input class="inputbox" type='text' placeholder="search..."  (blur)='logIn($event)'>
-  </a>
-  <a>
-  <br>
-    <div (click)='showCreateAccount()'>
-      Don't have an account? Click me!
+  <h1>Welcome to Discomfort!</h1>
+  <div id='login-container'>
+    <div class="logInStyle" [hidden]="reveal">
+      <h1 for='search'>Login</h1>
+      <input class="inputbox" type='text' placeholder="Username" [(ngModel)]='userName' id='search'>
+      <input type='button' value='Login' (click)='logIn("search")'>
+      <p>Don't have an account?<span (click)='toggleLogin()'>Sign up!</span></p>
     </div>
-    <input type='text' placeholder="search..." [hidden]="!reveal" (blur)='create($event)'>
-  </a>
+    <div (click)='showCreateAccount()' id='createAccount' [hidden]="!reveal">
+        <h1 for='search'>Sign Up</h1>
+        <input type='text' placeholder="Username" [hidden]="!reveal" (blur)='create($event)'>
+        <input type='button' value='Sign Up' (click)='logIn("search")'>
+        <p>Already have an account?<span (click)='toggleLogin()'>Log In</span></p>
+    </div>
+  </div>
 </div>

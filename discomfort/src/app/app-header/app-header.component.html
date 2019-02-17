@@ -1,10 +1,24 @@
+<!-- <div class='header'>
+  <ul class='nav left'>
+      <li><i class="fas fa-user"></i></li>
+      <li class="timeline" (click)="getTimeline()">Timeline</li>
+  </ul>
+  <input class="inputbox" type='text' placeholder="Search for posts (ex. #dogChallenge)" (blur)='search()'>
+  <ul class='nav right'>
+      <li>{{userName}}</li>
+      <li class="timeline" (click)="getTimeline()">Logout</li>
+  </ul>
+</div> -->
 
-<span class="header">
-  <i class="fas fa-user"></i>
-  <a class = "username">{{userName}}</a>
-  <input class="inputbox" type='text' placeholder="search..." (blur)='search()'>
-  <span class="position_right">
-    <a class = "timeline" (click)="getTimeline()">Timeline</a>
-    <a class = "logout"(click)="logOut()">Logout</a>
-  </span>
-</span>
+<div class="topnav">
+    <span class='topnav-left'>
+      <p class="timeline">Discomfort</p>
+      <i class="fas fa-user"></i>
+      <p class="timeline" (click)="getTimeline()">Timeline</p>
+      <input class="inputbox" type='text' placeholder="Search for posts (ex. #dogChallenge)" (blur)='search()'>
+    </span>
+    <div class="topnav-right">
+      <p>{{userName}}</p>
+      <p class="timeline" (click)="logout()">Logout</p>
+    </div>
+  </div>
