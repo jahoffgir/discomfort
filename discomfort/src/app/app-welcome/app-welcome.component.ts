@@ -16,7 +16,7 @@ export class AppWelcomeComponent implements OnInit {
   }
 
 
-  logIn(e: Event) {
+  logIn(e) {
     // TODO make the ENDPOINT connection to make sure that the user name exists
     if (true) {
       this.login.setLoggedInUser(true)
@@ -24,7 +24,7 @@ export class AppWelcomeComponent implements OnInit {
     }
   }
 
-  create(e: Event) {
+  create(e) {
     // TODO make ENDPOINT connection to make sure that the user name does not exist
     if (true) {
       this.login.setLoggedInUser(true)

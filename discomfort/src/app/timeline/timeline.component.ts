@@ -10,12 +10,29 @@ export class TimelineComponent implements OnInit {
 
   constructor(private data: DataService) { }
 
-  posts = []
+  challenges: any = []
 
   ngOnInit() {
     this.data.get('https://jsonplaceholder.typicode.com/todos/1').toPromise().then(response => {
-      response.posts = ['test1','test2'];
-      this.posts = response.posts;
+      console.log("GOIHGOIHG");
+      response.posts = [
+        {
+          title: '#supercoolchallenge',
+          user: 'ultimate_fuckboi',
+          date: 'Dec 19, 1992'
+        },
+        {
+          title: '#dogChallenge',
+          user: 'doggielover224',
+          date: 'Feb 14, 2015'
+        },
+        {
+          title: '#SlapYourPig',
+          user: 'farmerboy97',
+          date: 'Jan 5, 2019'
+        }
+      ];
+      this.challenges = response.posts;
     })
   }
 
