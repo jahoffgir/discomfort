@@ -12,21 +12,23 @@ export class AppWelcomeComponent implements OnInit {
   constructor(public login: LoginService) {
   }
 
+  userName = ''
   reveal = false;
 
   ngOnInit() {
   }
 
-  logIn(e) {
+  logIn(id) {
     // TODO make the ENDPOINT connection to make sure that the user name exists
-    if (true) {
+    if (this.userName != '') {
       this.login.setLoggedInUser(true)
-      this.login.setUserName(e.target.value)
+      this.login.setUserName(this.userName)
     }
   }
-  showCreateAccount() {
-    this.reveal = true;
+  toggleLogin() {
+    this.reveal = !this.reveal;
   }
+
   create(e) {
     // TODO make ENDPOINT connection to make sure that the user name does not exist
     if (true) {
