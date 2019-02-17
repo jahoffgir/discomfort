@@ -7,6 +7,7 @@ import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppWelcomeComponent } from './app-welcome/app-welcome.component';
 import { MainComponent } from './main/main.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { ChallengeComponent } from './challenge/challenge.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     AppHeaderComponent,
     AppWelcomeComponent,
     MainComponent,
-    TimelineComponent
+    TimelineComponent,
+    ChallengeComponent
   ],
   imports: [
     BrowserModule,

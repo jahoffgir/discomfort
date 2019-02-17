@@ -24,11 +24,9 @@ export class AppWelcomeComponent implements OnInit {
       this.login.setUserName(e.target.value)
     }
   }
-
   showCreateAccount() {
     this.reveal = true;
   }
-
   create(e) {
     // TODO make ENDPOINT connection to make sure that the user name does not exist
     if (true) {

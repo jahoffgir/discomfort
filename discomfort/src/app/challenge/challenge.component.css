@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+div{
+    background-color:#E8EAEA;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 15%;
+    position: relative;
+}
+h1{
+    padding: 2% 2.5%;
+}
+h2{
+    display:inline;
+    text-align:left;
+    font-size: 0.75rem;
+    margin: 5px;
+    color:gray;
+}
+#date{
+    position: absolute;
+    top:0;
+    right:10px;
+    font-size: 0.75rem;
+    color:gray;
+}
